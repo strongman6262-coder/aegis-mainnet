@@ -1,0 +1,6 @@
+{
+  "name": "Modular Privacy Layer-1 Blockchain",
+  "description": "Production-oriented modular Layer-1 blockchain protocol combining native ZK privacy, smart contract execution, PoS consensus, and decentralized P2P architecture.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

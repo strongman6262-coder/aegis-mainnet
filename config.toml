@@ -1,0 +1,32 @@
+[node]
+chain_id = 714261
+network = "mainnet"
+data_dir = "./data/aegis"
+log_level = "info"
+
+[rpc]
+enabled = true
+listen_addr = "0.0.0.0:8545"
+cors_origins = ["*"]
+max_connections = 10000
+rosetta_enabled = true
+rosetta_port = 8080
+
+[consensus]
+validator_mode = true
+block_time_ms = 2000
+min_stake = 10000000000000000000000
+commission_rate_bps = 500
+
+[mempool]
+capacity = 50000
+max_tx_gas = 30000000
+min_gas_price = 100
+
+[p2p]
+listen_addr = "/ip4/0.0.0.0/tcp/30303"
+bootnodes = [
+    "/ip4/34.120.55.10/tcp/30303/p2p/12D3KooWStakingBootnode1",
+    "/ip4/35.210.88.22/tcp/30303/p2p/12D3KooWValidatorPeerSeed2"
+]
+max_peers = 128
